@@ -1,0 +1,27 @@
+html
+    box-sizing $box-sizing
+*
+*:before
+*:after
+	box-sizing inherit
+
+html, body
+	height 100%
+
+body
+	font-size $font-size
+	line-height $line-height
+	font-family $font-family
+	color: $body-color
+	background-color: $body-background
+
+a
+	color: $link-color
+	text-decoration none
+	
+	transition all .2s ease
+	
+	&:hover
+		color: lighten($link-color, 30%)
+		
+		transition none

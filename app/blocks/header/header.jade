@@ -1,0 +1,19 @@
+mixin header()
+	+b.header
+		+b.search
+			+e.INPUT(placeholder='поиск').bar
+			+e.BUTTON.button
+		+b.logo
+			+e.avatar
+			+e.info
+				+e.text
+				+e.text
+		+b.UL.menu
+			+e.LI.item
+				+e.A(href='#').link О компании
+			+e.LI.item
+				+e.A(href='#').link Для частных клиентов
+			+e.LI.item
+				+e.A(href='#').link Для юридических лиц
+			+e.LI.item
+				+e.A(href='#').link Контакты									

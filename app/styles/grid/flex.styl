@@ -1,0 +1,27 @@
+body
+    min-height: 100vh
+    +to-width($desktop)
+        padding: 0 1.375rem
+
+.wrapper
+    clearfix()
+
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-content: space-between
+
+    height: 100%
+    max-width: $container-width
+    margin: 0 auto
+
+.header
+.main
+.footer
+    clearfix()
+    display: flex
+    flex-flow: row wrap
+    flex: 1 1 100%
+
+.footer
+    align-self: flex-end

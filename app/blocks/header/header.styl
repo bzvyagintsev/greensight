@@ -1,0 +1,149 @@
+.header
+    justify-content: space-around
+    flex-flow: row wrap
+
+    padding-top: 1em
+    margin-bottom: 3em
+
+    .search
+        flex: 1 1 100%
+
+        display: flex
+        justify-content: flex-end
+
+        +to-width($desktop)
+            flex: 1 1 auto
+            order: 2
+
+            margin-bottom: 2.25em          
+
+        &__bar
+            width: 15rem 
+            height: 1.5rem
+            padding: 0 0.5em
+            padding-right: 1rem
+            
+
+            color: #ccc
+            font-size: 0.75rem
+            font-style: italic
+            &::placeholder
+                color: #ccc
+
+            border: 1px solid #ccc
+            border-radius: $border-radius
+            outline: none
+
+            +mobile()
+                flex: 1 1 100%
+
+        &__button
+            height: 1.5rem
+            width: 1.5rem
+            margin-left: -1rem
+
+            border: none
+            border-radius: $border-radius
+            outline: none
+            
+            background-color: $blue-bg
+            background-image: url('../images/search.svg')
+            background-repeat: no-repeat
+            background-size: 65% 
+            background-position: center
+          
+    .logo
+        flex: 0 0 auto
+
+        display: flex
+        align-items: center
+
+        height: 6.25rem
+        width: 15.625rem
+        margin-right: 4em
+
+        background: $blue-bg
+
+        border-radius: $border-radius
+
+        +to-width($desktop)
+            order: 1
+            margin: 0 auto 2.25em
+            
+
+        &__avatar
+            height: 4rem
+            width: 4rem
+            margin: 1em
+
+            background: $second-blue-bg
+
+            border-radius: $border-radius
+
+        &__info
+            flex: 1 1
+
+            margin-right: 1em
+
+
+        &__text
+            height: 0.875rem
+            
+            background: $second-blue-bg
+
+            &:first-child
+                margin-bottom: 0.688em
+            
+    .menu
+        flex: 1 1 auto
+        order: 3
+
+        display: flex
+        justify-content: space-around
+        align-items: center
+        
+        list-style: none
+                
+        border-bottom: 1px solid $separator-color
+        
+        +to-width($desktop)
+            flex: 1 1 100%
+
+            flex-wrap: wrap
+            
+            background: $blue-bg
+ 
+            border-radius: $border-radius 
+
+        &__link
+            flex: 1 1 auto
+
+            text-align: center
+
+            +to-width($desktop)
+                color: #fff
+
+                &:hover,
+                &:active
+                    color: darken(#fff,5%)
+
+        &__item
+            flex: 1 1 auto
+            
+            display: flex
+            justify-content: space-around
+            align-items: center
+
+            height: 3rem
+                        
+            text-align: center
+                     
+            &:not(:last-child)
+                +desktop()
+                    border-right: 1px solid $separator-color
+
+                +to-width($desktop)
+                    border-bottom: 1px solid #bceffa
+            
+            +to-width($desktop)
+                flex: 1 1 100%

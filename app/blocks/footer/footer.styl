@@ -1,0 +1,70 @@
+.footer
+    justify-content: space-between
+    
+    padding: 2.625em 0
+    margin-top: 7.5em
+
+    border-top: 1px solid $separator-color
+    
+    .footer-menu
+        flex: 0 1 auto
+
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        
+        list-style: none
+        
+        &__link
+            font-size: 0.75rem
+
+        &__item
+            flex: 0 1 auto
+
+            display: flex
+            justify-content: space-around
+            align-items: center
+            
+            &:not(:last-child)::after
+                content: ''
+
+                height: 1rem
+                margin: auto 1em
+
+                border-right: 1px solid $separator-color
+
+            &:last-child
+                flex: 0
+            
+        +mobile()
+            flex: 1 1 100%
+            
+            &__item
+                flex: 1 1 100%
+                
+                justify-content: center
+
+                &:not(:last-child)::after
+                    display: none
+                
+
+                            
+
+    .copyright
+        flex: 1 1 auto
+        
+        font-size: 0.75rem
+        text-align: right;
+
+        a
+            text-decoration: underline
+
+            &:hover,
+            &:focus,
+            &:active
+                text-decoration: none
+        
+        +mobile()
+            margin-top: 1em
+
+            text-align: center
