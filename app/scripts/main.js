@@ -35,7 +35,7 @@ var drawLines = function() {
     var fourthLine = c.getContext("2d");
 
     firstLine.beginPath();
-    firstLine.moveTo(first.right - container.left - 10, first.bottom - (first.bottom - first.top) / 4 - container.top);
+    firstLine.moveTo(first.right - container.left - 5, first.bottom - (first.bottom - first.top) / 4 - container.top);
     firstLine.lineTo(pepyaka.left - container.left + 150, pepyaka.top - container.top + 170);
     firstLine.stroke();
 
@@ -51,6 +51,6 @@ var drawLines = function() {
 
     fourthLine.beginPath();
     fourthLine.moveTo(fourth.left - container.left - 10, fourth.top + (fourth.bottom - fourth.top) / 3 - container.top);
-    fourthLine.lineTo(pepyaka.right - container.left - 80, pepyaka.bottom - container.top - 140);
+    fourthLine.lineTo(pepyaka.right - container.left - 80, pepyaka.bottom - container.top - 150);
     fourthLine.stroke();
 }
